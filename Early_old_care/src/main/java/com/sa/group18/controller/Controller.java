@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import com.sa.group18.entity.Ethnicity;
 import com.sa.group18.entity.Nationality;
 import com.sa.group18.entity.Position;
 import com.sa.group18.entity.Profile;
 import com.sa.group18.entity.Religion;
 import com.sa.group18.entity.Status;
+import com.sa.group18.entity.Titlename;
 import com.sa.group18.repository.EthnicityRepository;
 import com.sa.group18.repository.NationalityRepository;
 import com.sa.group18.repository.PositionRepository;
@@ -97,17 +97,17 @@ public class Controller {
         return statusRepository.findAll().stream().collect(Collectors.toList());
     }
     @GetMapping("/Status/{Status_id}")
-    public Status getOneStatus(@PathVariable Long Religion_id){
-        return statusRepository.findById(Religion_id).get();
+    public Status getOneStatus(@PathVariable Long Status_id){
+        return statusRepository.findById(Status_id).get();
     }
 
-    @GetMapping("/Status")
-    public List<Status> getStatus(){
-        return statusRepository.findAll().stream().collect(Collectors.toList());
+    @GetMapping("/Titlename")
+    public List<Titlename> getTitlename(){
+        return titlenameRepository.findAll().stream().collect(Collectors.toList());
     }
-    @GetMapping("/Status/{Status_id}")
-    public Status getOneStatus(@PathVariable Long Religion_id){
-        return statusRepository.findById(Religion_id).get();
+    @GetMapping("/Titlename/{Titlename_id}")
+    public Titlename getOneTitlename(@PathVariable Long Titlename_id){
+        return titlenameRepository.findById(Titlename_id).get();
     }
 
 
