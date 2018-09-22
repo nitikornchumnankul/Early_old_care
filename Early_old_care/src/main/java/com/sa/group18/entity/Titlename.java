@@ -21,7 +21,7 @@ public class Titlename{
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name="Titlename_Id")
-    private @NonNull Long Id;
+    private @NonNull Long Titlename_Id;
 
     @Column
     private @NonNull String Titlename;

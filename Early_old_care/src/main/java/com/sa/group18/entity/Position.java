@@ -23,7 +23,7 @@ public class Position {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name="Position_Id")
-    private @NonNull Long Id;
+    private @NonNull Long Position_Id;
 
     @Column
     private @NonNull String Position;

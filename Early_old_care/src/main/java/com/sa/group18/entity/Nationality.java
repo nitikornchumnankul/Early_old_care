@@ -20,7 +20,7 @@ import lombok.*;
 public class Nationality {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private @NonNull Long Id;
+    private @NonNull Long NationalityId;
 
     @Column
     private @NonNull String Nationality;

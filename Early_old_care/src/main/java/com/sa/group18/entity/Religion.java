@@ -20,7 +20,7 @@ public class Religion{
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name="Religion_Id")
-    private @NonNull Long Id;
+    private @NonNull Long Religion_Id;
 
     @Column
     private @NonNull String Religion;
